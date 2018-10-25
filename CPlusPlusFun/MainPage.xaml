@@ -1,14 +1,22 @@
 ﻿<Page
-    x:Class="CPlusPlusFun.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CPlusPlusFun"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	 x:Class="CPlusPlusFun.MainPage"
+	 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	 xmlns:local="using:CPlusPlusFun"
+	 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	 mc:Ignorable="d"
+	 Background="#FF05380D" Foreground="White">
 
-    <Grid>
-
-    </Grid>
+	<Grid>
+		<StackPanel x:Name="contentPanel" Margin="20">
+			<TextBlock Text="Hello... Human" HorizontalAlignment="Left" FontSize="40"/>
+			<TextBlock Text="...What do other humans call you?" Margin="20,20,0,0" />
+			<StackPanel x:Name="inputPanel" Orientation="Horizontal" Margin="20">
+				<TextBox x:Name="nameInput" Width="300" HorizontalAlignment="Left" Foreground="White" BorderBrush="#66FFFFFF" SelectionHighlightColor="#FFC07529" TabIndex="1"/>
+				<Button x:Name="inputButton" Content="Respond to machine..." Margin="20,0,0,0" Foreground="White" FocusVisualPrimaryBrush="Black" TabIndex="2" RequestedTheme="Dark" />
+			</StackPanel>
+			<TextBlock x:Name="greetingOutput"/>
+		</StackPanel>
+	</Grid>
 </Page>
