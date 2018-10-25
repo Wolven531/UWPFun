@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="711e1fb7-6887-4ba3-9f08-3d7d6bb82b7e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>CPlusPlusFun</DisplayName>
+    <DisplayName>UWPFun</DisplayName>
     <PublisherDisplayName>antho</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="CPlusPlusFun.App">
+      EntryPoint="UWPFun.App">
       <uap:VisualElements
-        DisplayName="CPlusPlusFun"
+        DisplayName="UWPFun"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="CPlusPlusFun"
+        Description="UWPFun"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
